@@ -27,6 +27,8 @@ switch (Math.floor(Math.random()*3)){
     case 2: col = "blue";
     break;
     default: col = "green";
+
+    console.log(col);
 }
 
 //while loop
