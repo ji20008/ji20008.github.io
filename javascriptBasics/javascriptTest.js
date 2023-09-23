@@ -21,7 +21,13 @@ for(let i=0;i<arr.length;i++){
 console.log(sum);
 
 //switch case
-
+switch (Math.floor(Math.random()*3)){
+    case 1: col = "red";
+    break;
+    case 2: col = "blue";
+    break;
+    default: col = "green";
+}
 
 //while loop
 
