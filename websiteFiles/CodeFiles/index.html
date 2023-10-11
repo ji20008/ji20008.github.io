@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Tic Tac Toe Home</title>
+        <title>WP website</title>
         <link rel="stylesheet" href="styles.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script>
-            $(document).ready(function(){
-                function appendText(){
-                    
+            function appendText(){
+                    var text = '<div style="border-style: groove">General Kenobi</div>';
+                    $("body").append(text);
                 }
+            $(document).ready(function(){
+                
             });
         </script>
     </head>
@@ -15,9 +18,11 @@
         <h1>Welcome to WP website!</h1>
         <nav class="navbar">
             <a href="cookiebanner.html">Cookie Bar</a>
-            <a id href="leaflet.html">Leaflet</a>
+            <a href="leaflet.html">Leaflet</a>
             <a href="mermaidHTML.html">Mermaid Graph</a>
         </nav>
         <h2>This page links to other pages that implement javascript concepts</h2>
+        <button onclick="appendText()">Hello There</button> <p>This button creates a div on the fly</p>
+
     </body>
 </html>

@@ -39,3 +39,7 @@ body{
 #leaflet{
     background-color:silver;
 }
+
+button{
+    text-align:center;
+}
