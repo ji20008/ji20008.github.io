@@ -16,6 +16,10 @@
                     $("#show").click(function(){
                          $("p").show();
                     });
+                    $("#divBorder").click(function(){
+                        $("div").css({"border-style":"double","border-color":"red"})
+                    });
+                
                 });
         </script>
     </head>
@@ -36,6 +40,8 @@
             <button id="show">Show</button>
             <p>Click this button to hides all elements in a p tag</p>
         </div>
+
+        <button id="divBorder">Change Border</button><p>Click this button to change the div borders</p>
 
     </body>
 </html>
