@@ -9,9 +9,14 @@
                     var text = '<div style="border-style: groove">General Kenobi</div>';
                     $("body").append(text);
                 }
-            $(document).ready(function(){
-                
-            });
+                $(document).ready(function(){
+                    $("#hide").click(function(){
+                         $("p").hide();
+                     });
+                    $("#show").click(function(){
+                         $("p").show();
+                    });
+                });
         </script>
     </head>
     <body>
@@ -21,8 +26,16 @@
             <a href="leaflet.html">Leaflet</a>
             <a href="mermaidHTML.html">Mermaid Graph</a>
         </nav>
+        <div>
         <h2>This page links to other pages that implement javascript concepts</h2>
         <button onclick="appendText()">Hello There</button> <p>This button creates a div on the fly</p>
+        </div>
+
+        <div>
+            <button id="hide">Hide</button>
+            <button id="show">Show</button>
+            <p>Click this button to hides all elements in a p tag</p>
+        </div>
 
     </body>
 </html>
