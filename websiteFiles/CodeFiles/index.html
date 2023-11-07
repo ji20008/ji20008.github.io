@@ -21,6 +21,14 @@
                     });
                 
                 });
+            function increaseImage(image) {
+                 image.style.transform = 'scale(1.2)';
+                 image.style.transition = 'transform 0.3s';
+            }
+
+            function restoreImage(image) {
+                    image.style.transform = 'scale(1)';
+            }
         </script>
     </head>
     <body>
@@ -48,6 +56,11 @@
 
         <button id="divBorder">Change Border</button><p>Click this button to change the div borders</p>
 
+        </div>
+        <div class="imageStyle">
+            <img src="FlagofScotland.png" alt="Image 1" onmouseover="increaseImage(this)" onmouseout ="restoreImage(this)">
+            <img src="HeartofMidlothianFClogo.png" alt="Image 2" onmouseover="increaseImage(this)" onmouseout ="restoreImage(this)">
+            <img src="Tennents-ogo.png" alt="Image 3" onmouseover="increaseImage(this)" onmouseout ="restoreImage(this)">
         </div>
 
         
