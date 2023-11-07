@@ -3,22 +3,7 @@
     <head>
         <title>Cooikes and Web Storage</title>
         <link rel="stylesheet" href="styles.css">
-        <script>
-            if(localStorage){//check if local storage object exists
-                function savewb(){//store data
-                    var txt = document.getElementById('sName').value;
-                    localStorage.setItem("name",txt);
-                    alert ("Your name is saved");
-                }
-                function accesswb(){//retrieve data
-                    alert("Hi, "+ localStorage.getItem("name"));
-                }
-            }else {
-                alert("Sorry your browser does not support local storage");
-            }
-
-            
-        </script>
+        <script src="webstorage.js"></script>
     </head>
     <body id="CandW">
         <h1>This page implements cookies and web storage</h1>
