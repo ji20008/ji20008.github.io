@@ -7,14 +7,21 @@
         <script>
             $(document).ready(function(){//make sure everything is loaded before running
                 //variables for square
-                var colours = ['red', 'yellow', 'green', 'blue', 'orange', 'purple']
-                var index = 0;
                 var square = $('#colourSquare');
+                //function to created a random colour
+                function getRandomColour() {
+                    var letters = '0123456789ABCDEF';
+                    var colour = '#';
+                    for (var i = 0; i < 6; i++) {
+                        colour += letters[Math.floor(Math.random() * 16)];
+                    }
+                    return colour;
+                }
 
                 //function to chnage the colour of the square
                 function changeColour(){
-                    square.css('background-color', colours[index]);
-                    index = (index + 1) % colours.length;
+                    var randomColour = getRandomColour;
+                    square.css('background-color', randomColour);
                 }
                 //change the squares colour every second
                 setInterval(changeColour, 750);
