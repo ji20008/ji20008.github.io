@@ -1,12 +1,12 @@
 /*styles for webpage and linked pages*/
 h1,h2{
     text-align: center; 
-    font-family:'Arial' A;
     color: black
 }
 
 body{
     background-color: beige;
+    font-family: Helvetica
 }
 
 .navbar{
@@ -34,6 +34,11 @@ body{
 #mermaid{
     text-align: center;
     background-color:darkolivegreen
+}
+
+#morejq{
+    background-color:thistle ;
+
 }
 
 #leaflet{
