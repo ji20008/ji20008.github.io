@@ -6,3 +6,15 @@ function setCookie(){
     alert("Username cookie set!");
 
 }
+
+//Function to retrieve the value of a cookie by its name
+function getCookie(name){
+    const cookies = document.cookie.split('; ');
+    for (let i=0; i<cookies.length; i++){
+        const cookie = cookie[i].split('=');
+        if (cookie[0] === name){
+            return cookie[1];
+        }
+    }
+    return null;//cookie not found
+}
