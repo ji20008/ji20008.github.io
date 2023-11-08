@@ -78,8 +78,8 @@ button{
   }
 
 #colourSquare{/*css for colour chnaging square*/
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-color: white;
     transition: background-color 0.5s;
 }
