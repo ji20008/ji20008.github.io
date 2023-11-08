@@ -76,3 +76,10 @@ button{
   .imageStyle img:hover {
     transform: scale(1.2); /* Increase the image size on hover */
   }
+
+#colourSquare{/*css for colour chnaging square*/
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    transition: background-color 0.5s;
+}
