@@ -26,15 +26,16 @@
             </form>
         </div>
         <br>
-        <div>
+        <div id="form">
            <h2>This section uses cookies</h2> 
            <!-- input field to collect username -->
-           <label for"username">Enter your username: </label>
+           <label for="username">Enter your username: </label>
            <input type = "text" id="username">
+           <button onclick="setCookie()">Set Username</button>
            <!-- button to retrieve and display username -->
            <button onclick="display()">Get Username</button>
-           <!-- div to display username -->
-           <div id="usernameDisplay"></div>
-        </div>   
+        </div> 
+        <!-- div to display username -->
+        <div id="usernameDisplay"></div>  
     </body>
 </html>
