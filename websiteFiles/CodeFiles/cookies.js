@@ -18,3 +18,13 @@ function getCookie(name){
     }
     return null;//cookie not found
 }
+
+//Function to get then display the username on the webpage
+function display(){
+    const username = getCookie("username");
+    if(username){
+        document.getElementById("usernameDisplay").textContent = "Username: "+ username;
+    }else{
+        document.getElementById("usernameDisplay").textContent = "Username cookie not found"
+    }
+}
