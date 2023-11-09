@@ -6,7 +6,7 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script>
             $(document).ready(function(){//make sure everything is loaded before running
-                //variables for square
+                //variables and function for colour square
                 var square = $('#colourSquare');
                 //function to created a random colour
                 function getRandomColour() {
@@ -26,21 +26,33 @@
                 //change the squares colour every second
                 setInterval(changeColour, 750);
 
-                
+                //variables and functions for animated square
+                var square = $('#animatedSquare');
+
+                //function to move the square across the screen
+                function moveSquare(){
+                    var newLeft = Math.random()*($(window)-square.width()); //create a new random left in the window
+                    var newTop = Math.random()*($(window)-square.width());//created a new random top in the window
+
+                    square.animate({ //use the jquery animate to smoothly move the square across the screen
+                        left: newLeft, //set the left to the new left
+                        top: newTop //set the top to the new top
+
+                    }, 1000); //duration of the animation speed(in milliseconds)
+
+                };
+                square.on('mouseenter', moveSquare); //add the move square function onto the mouse enter event of the square element
+
             });
         </script>
     </head>
     <body id="morejq">
         <h1>This page implements some more JQuery</h1>
         <h2>This section implements a colour changing square with JQuery</h2>
-        <div id="container">
         <div id="colourSquare"></div>
-        </div>
         <br>
         <h2>This section uses JQuery to animate a square that moves across the screen when moved on</h2>
-        <div>
-
-        </div>
+        <div></div>
 
     </body>
 </html>
