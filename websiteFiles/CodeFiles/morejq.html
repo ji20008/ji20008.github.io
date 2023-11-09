@@ -25,7 +25,8 @@
                 }
                 //change the squares colour every second
                 setInterval(changeColour, 750);
-
+            });
+            $(document).ready(function(){//make sure everything is loaded before running
                 //variables and functions for animated square
                 var square = $('#animatedSquare');
 
@@ -42,8 +43,8 @@
 
                 };
                 square.on('mouseenter', moveSquare); //add the move square function onto the mouse enter event of the square element
-
             });
+            
         </script>
     </head>
     <body id="morejq">
