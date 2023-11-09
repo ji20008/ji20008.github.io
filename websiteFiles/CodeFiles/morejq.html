@@ -20,7 +20,7 @@
 
                 //function to chnage the colour of the square
                 function changeColour(){
-                    var randomColour = getRandomColour;
+                    var randomColour = getRandomColour();
                     square.css('background-color', randomColour);
                 }
                 //change the squares colour every second
@@ -32,8 +32,8 @@
 
                 //function to move the square across the screen
                 function moveSquare(){
-                    var newLeft = Math.random()*($(window)-square.width()); //create a new random left in the window
-                    var newTop = Math.random()*($(window)-square.width());//created a new random top in the window
+                    var newLeft = Math.random()*($(window).width()-square.width()); //create a new random left in the window
+                    var newTop = Math.random()*($(window).height()-square.width());//created a new random top in the window
 
                     square.animate({ //use the jquery animate to smoothly move the square across the screen
                         left: newLeft, //set the left to the new left
@@ -49,11 +49,13 @@
     </head>
     <body id="morejq">
         <h1>This page implements some more JQuery</h1>
-        <h2>This section implements a colour changing square with JQuery</h2>
-        <div id="colourSquare"></div>
-        <br>
-        <h2>This section uses JQuery to animate a square that moves across the screen when moved on</h2>
+        <div id="animatedContainer">
+        <h2>This square uses JQuery to move across the screen when moved on</h2>
         <div id="animatedSquare"></div>
+        </div>
+        <br>
+        <h2>This square implements JQuery to change to random colours</h2>
+        <div id="colourSquare"></div>
 
     </body>
 </html>
