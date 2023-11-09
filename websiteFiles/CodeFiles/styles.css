@@ -83,3 +83,11 @@ button{
     background-color: white;
     transition: background-color 0.5s;
 }
+#animatedSquare {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 213, 0);
+    position: absolute;
+    top: 50px;
+    left: 50px;
+  }
