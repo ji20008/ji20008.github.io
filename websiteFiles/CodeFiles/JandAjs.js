@@ -10,6 +10,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event){
     fetch("JandAusers.json")
         .then((response) => response.json())
         .then((data) => {
+        
             //Extract the array of users from the json data
             const users = data.users;
 
@@ -18,9 +19,9 @@ document.getElementById("loginForm").addEventListener("submit", function(event){
 
             //Display a message based on the login result
             if(user){
-                document.getElementById("message").textContent = "Login successful!";
+                alert("Login successful!");
             }else{
-                document.getElementById("message").textContent = "Invalid username or password";
+                alert("Invalid username or password");
             }
         })
         .catch((error)=>{
