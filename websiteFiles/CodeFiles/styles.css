@@ -67,7 +67,8 @@ button{
 
 
 #button{
-    text-align: center;
+    display: block;
+    margin: 0 auto;
 }
 
 .imageStyle {
