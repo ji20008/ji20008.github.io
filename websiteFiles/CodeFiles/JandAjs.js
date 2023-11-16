@@ -30,4 +30,17 @@ document.getElementById("loginForm").addEventListener("submit", function(event){
         });
 });
 
-//display a json string from an javascript object
+//function to display a json string from an javascript object when called
+function jstring(){
+    //create a person object
+    const person ={
+        name : "Jezza",
+        age: 20
+    };
+
+    //Converrt the object to a json string
+    const jsonString = JSON.stringify(person);
+
+    //display the string
+    alert =(jsonString)
+};
