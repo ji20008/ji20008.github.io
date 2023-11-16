@@ -42,5 +42,5 @@ function jstring(){
     const jsonString = JSON.stringify(person);
 
     //display the string
-    alert =(jsonString)
+    alert (jsonString)
 };
