@@ -28,5 +28,6 @@ document.getElementById("loginForm").addEventListener("submit", function(event){
             //Log an error if theres an issue fetching the json data
             console.error("Error fetching data: ",error);
         });
-
 });
+
+//display a json string from an javascript object
