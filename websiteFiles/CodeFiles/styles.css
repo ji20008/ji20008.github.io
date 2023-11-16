@@ -61,6 +61,10 @@ button{
     text-align: center;
 }
 
+#button{
+    text-align: center;
+}
+
 .imageStyle {
     display: flex;
     justify-content: space-between;
@@ -92,6 +96,3 @@ button{
     left: 50px;
   }
 
-#loginForm{
-    text-align:center;
-}
